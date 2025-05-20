@@ -45,6 +45,9 @@
 .inputInfos:focus {
     outline: 4px solid rgb(172, 142, 173);
 }
+.inputInfos.dark:focus {
+    outline: 4px solid rgb(44, 107, 201)
+}
 .inputInfos::placeholder {
     color: rgba(150, 153, 171, 0.75);
 }

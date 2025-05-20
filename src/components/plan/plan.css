@@ -14,6 +14,7 @@
     bottom: 30px;
     color: hsl(213, 96%, 18%);
     font-weight: 500;
+    cursor: pointer;
 }
 .divPlans {
     display: flex;

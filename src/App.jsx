@@ -17,7 +17,7 @@ function App() {
       <Sidebar step={step} setStep={setStep} />
       <div className="AppDroite">
       {step === "infos" ? (<Infos step={step} setStep={setStep} />)
-      : step === "plan" ? (<Plan yearly={yearly} setYearly={setYearly} />)
+      : step === "plan" ? (<Plan yearly={yearly} setYearly={setYearly} step={step} setStep={setStep} />)
       : "" }
       <Addons/>
       <Summary/>

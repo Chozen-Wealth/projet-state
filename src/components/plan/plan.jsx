@@ -4,7 +4,7 @@ import advanced from "../../../public/img/advenced.svg"
 import pro from "../../../public/img/pro.svg"
 import { useState } from "react"
 
-export default function Plan({yearly, setYearly}){
+export default function Plan({yearly, setYearly, step, setStep}){
 
     const [change, setChange] = useState(false)
 
@@ -46,7 +46,7 @@ export default function Plan({yearly, setYearly}){
                 <span className={`${change === true ? "planChosen" : ""}`}>Yearly</span>
             </div>
             <button onClick={()=> setStep("plan")} className="btnNext">Next Step</button>
-            <span className="btnGoBack">Go Back</span>
+            <span onClick={()=> setStep("infos")} className="btnGoBack">Go Back</span>
         </div>
     )
 }

@@ -28,9 +28,16 @@
 .cardAddons:hover {
     border-color: rgb(111, 53, 190);
 }
+.cardAddons.dark:hover {
+    border-color: rgb(70, 150, 255);
+}
 .cardAddons.active {
     border-color: rgb(111, 53, 190);
     background-color: rgba(211, 211, 211, 0.5);
+}
+.cardAddons.dark.active {
+    border-color: rgb(70, 150, 255);
+    background-color: rgba(211, 211, 211, 0.1)
 }
 .CheckAddons {
     border: 2px solid rgba(150, 153, 171, 0.4);
@@ -41,11 +48,21 @@
     align-items: center;
     border-radius: 3px;
 }
+.CheckAddons.dark svg {
+    fill: rgb(33, 39, 54);
+}
 .CheckAddons svg {
     fill: white;
 }
+
 .CheckAddons.active {
     background-color: rgb(111, 53, 190);
+}
+.CheckAddons.dark.active {
+    background-color: rgb(70, 150, 255);
+}
+.CheckAddons.dark.active svg {
+    fill: white;
 }
 .divTextAddons {
     display: flex;
@@ -63,7 +80,13 @@
     font-weight: 500;
     font-size: 16px;
 }
+.divTextAddons.dark > span:first-of-type{
+    color: white;
+}
 .addonsPricing {
     color: rgb(111, 53, 190);
     font-weight: 500;
+}
+.addonsPricing.dark {
+    color: rgb(70, 150, 255);
 }

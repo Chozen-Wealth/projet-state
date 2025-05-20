@@ -11,6 +11,9 @@ body {
     width: 100vw;
     background-color: hsl(217, 100%, 97%);
 }
+body.dark {
+    background-color: rgb(49, 57, 78);
+}
 
 #root {
     display: flex;

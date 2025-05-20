@@ -14,6 +14,9 @@
 .divTitre h1 {
     color: hsl(213, 96%, 18%);
 }
+.divTitre.dark h1 {
+    color: white;
+}
 .divTitre p {
     color: hsl(231, 11%, 63%);
     font-size: 14px;
@@ -23,6 +26,9 @@
     margin-bottom: 5px;
     font-weight: bold;
 }
+.labelInfos.dark {
+    color: white;
+}
 .inputInfos {
     width: 100%;
     padding: 15px;
@@ -31,6 +37,10 @@
     border: none;
     margin-bottom: 15px;
     font-weight: 500;
+}
+.inputInfos.dark {
+    background-color: rgb(33, 39, 54);
+    color: white;
 }
 .inputInfos:focus {
     outline: 4px solid rgb(172, 142, 173);
@@ -51,11 +61,23 @@
     cursor: pointer;
     transition: 0.3s ease;
 }
+.btnNext.dark {
+    background-color: hsl(214, 100%, 95%);
+    color: black;
+}
 .btnNext:hover {
     background-color: hsl(213, 100%, 27%);
+}
+.btnNext.dark:hover {
+    background-color: hsl(212, 100%, 89%);
+    color: black;
 }
 .btnNext.disabled {
     background-color: hsl(212, 39%, 80%);
     color: rgb(255, 255, 255);
     cursor: default;
+}
+.btnNext.dark.disabled {
+    background-color: hsla(0, 0%, 0%, 0.479);
+    color: rgb(117, 117, 117);
 }

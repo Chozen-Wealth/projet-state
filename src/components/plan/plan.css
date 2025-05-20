@@ -16,6 +16,9 @@
     font-weight: 500;
     cursor: pointer;
 }
+.btnGoBack.dark {
+    color: white;
+}
 .divPlans {
     display: flex;
     justify-content: space-between;
@@ -36,9 +39,17 @@
     border: 2px solid rgb(182, 104, 185);
     background-color: rgba(211, 211, 211, 0.5);
 }
+.cardPlan.dark.active {
+    border: 2px solid rgb(25, 107, 230);
+    background-color: rgba(211, 211, 211, 0.1);
+}
 .cardPlan:hover {
     border: 2px solid rgb(182, 104, 185);
     background-color: rgba(211, 211, 211, 0.5);
+}
+.cardPlan.dark:hover {
+    border: 2px solid rgb(25, 107, 230);
+    background-color: rgba(211, 211, 211, 0.1);
 }
 .cardImg {
     width: 40px;
@@ -53,6 +64,9 @@
     font-weight: bolder;
     font-size: 18px;
 }
+.cardPricing.dark span:first-of-type {
+    color: white;
+}
 .cardPricing span:last-of-type {
     color: hsl(231, 11%, 63%);
     font-weight: 500;
@@ -66,6 +80,9 @@
     width: 100%;
     margin-top: 30px;
 }
+.divSwitchPlan.dark {
+    background-color: rgba(80, 147, 255, 0.2);
+}
 .divSwitchPlan span {
     color: hsl(231, 11%, 63%);
     font-weight: 500;
@@ -73,6 +90,9 @@
 }
 .divSwitchPlan span.planChosen {
     color: hsl(213, 96%, 18%);
+}
+.divSwitchPlan.dark span.planChosen {
+    color: white;
 }
 .switch {
     background-color: hsl(213, 96%, 18%);
@@ -86,6 +106,9 @@
     cursor: pointer;
     position: relative;
 }
+.switch.dark {
+    background-color: rgb(255, 255, 255);
+}
 .ball.on {
     position: absolute;
     left: calc(47px - 20px);
@@ -98,4 +121,7 @@
     background-color: white;
     border-radius: 50%;
     transition: 0.2s ease;
+}
+.ball {
+    background-color: hsl(213, 59%, 46%);
 }

@@ -1,6 +1,6 @@
 import "./summary.css"
 
-export default function Summary({step, setStep, addons, plan, yearly, online, storage, custom}){
+export default function Summary({dark, step, setStep, addons, plan, yearly, online, storage, custom}){
 
     let totalTout = 0
     
@@ -26,7 +26,7 @@ export default function Summary({step, setStep, addons, plan, yearly, online, st
 
     return(
         <div className="summary">
-            <div className="divTitre">
+            <div className={`divTitre ${dark ? "dark" : ""}`}>
                 <h1>Finishing up</h1>
                 <p>Double-check everything looks OK before confirming.</p>
             </div>
@@ -67,8 +67,8 @@ export default function Summary({step, setStep, addons, plan, yearly, online, st
                     <span className="summaryTotalNombre">{`$${totalTout}/${yearly ? "yr":"mo"}`}</span>
                 </div>
             </div>
-            <button onClick={()=> setStep("thankyou")} className="btnNext">Confirm</button>
-            <span onClick={()=> setStep("addons")} className="btnGoBack">Go Back</span>
+            <button onClick={()=> setStep("thankyou")} className={`btnNext ${dark ? "dark" : ""}`}>Confirm</button>
+            <span onClick={()=> setStep("addons")} className={`btnGoBack ${dark ? "dark": ""}`}>Go Back</span>
         </div>
     )
 }

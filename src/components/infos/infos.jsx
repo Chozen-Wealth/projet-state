@@ -12,7 +12,7 @@ export default function Infos({dark, step, setStep, valueNom, setValueNom, value
     }
     
     return(
-        <div className="infos">
+        <div className="Compo">
             <div className={`divTitre ${dark ? "dark": ""}`}>
                 <h1>Personnal infos</h1>
                 <p>Please provide your name, email adress and phone number.</p>

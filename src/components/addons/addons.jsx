@@ -20,7 +20,7 @@ export default function Addons({dark, yearly, step, setStep, addons, setAddons, 
     // }
 
     return(
-        <div className="addons">
+        <div className="Compo">
             <div className={`divTitre ${dark ? "dark" : ""}`}>
                 <h1>Pick add-ons</h1>
                 <p>Add-ons help enhance your gaming experience.</p>

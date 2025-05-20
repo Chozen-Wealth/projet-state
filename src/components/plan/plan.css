@@ -125,3 +125,8 @@
 .ball.dark {
     background-color: hsl(213, 59%, 46%);
 }
+@media (max-width: 910px) {
+    .btnGoBack {
+        left: 20px;
+    }
+}

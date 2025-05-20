@@ -25,7 +25,7 @@ export default function Summary({dark, step, setStep, addons, plan, yearly, onli
     }
 
     return(
-        <div className="summary">
+        <div className="Compo">
             <div className={`divTitre ${dark ? "dark" : ""}`}>
                 <h1>Finishing up</h1>
                 <p>Double-check everything looks OK before confirming.</p>

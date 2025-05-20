@@ -35,9 +35,11 @@
     .App {
         flex-direction: column;
         width: 80%;
+        height: 650px;
         padding: 0px;
     }
     .AppDroite {
         width: 100%;
+        height: calc(100% - 100px);
     }
 }

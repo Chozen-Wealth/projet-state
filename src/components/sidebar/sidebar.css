@@ -62,9 +62,10 @@
         padding-top: 0px;
         background-position: 20% 74%;
         justify-content: space-between;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         border-radius: 10px 10px 0px 0px;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75)) ,url(../../../public/img/sidebar.svg);
     }
     .opt {
         margin-left: 0;

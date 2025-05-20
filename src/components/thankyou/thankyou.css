@@ -21,6 +21,9 @@
     opacity: 0;
     animation: appear 1s ease 0.3s forwards;
 }
+.thankyou.dark h1 {
+    color: white;
+}
 .thanksLogo {
     animation: thanks 0.5s ease forwards;
 }

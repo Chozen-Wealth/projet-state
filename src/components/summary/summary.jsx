@@ -62,9 +62,9 @@ export default function Summary({dark, step, setStep, addons, plan, yearly, onli
                 ): "" }
             </div>
             <div className="summaryBot">
-                <div className="divSummaryTotal">
+                <div className={`divSummaryTotal ${dark ? "dark": ""}`}>
                     <span>{`Total (${yearly === true ? "per year" : "per month"})`}</span>
-                    <span className="summaryTotalNombre">{`$${totalTout}/${yearly ? "yr":"mo"}`}</span>
+                    <span className={`summaryTotalNombre ${dark ? "dark": ""}`}>{`$${totalTout}/${yearly ? "yr":"mo"}`}</span>
                 </div>
             </div>
             <button onClick={()=> setStep("thankyou")} className={`btnNext ${dark ? "dark" : ""}`}>Confirm</button>

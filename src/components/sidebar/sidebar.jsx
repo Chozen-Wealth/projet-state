@@ -1,9 +1,9 @@
 import "./sidebar.css"
 
-export default function Sidebar({step, setStep}){
+export default function Sidebar({dark, step, setStep}){
 
     return(
-        <div className="sidebar">
+        <div className={`sidebar ${dark ? "dark" : ""}`}>
             <div className="opt">
                 <div className={`optBubble ${step === "infos" ? "active" : ""}`}>1</div>
                 <div className="optText">

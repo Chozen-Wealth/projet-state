@@ -36,8 +36,11 @@
     justify-content: space-between;
     padding: 20px;
 }
+.divSummaryTotal.dark > span:first-of-type{
+    color: white;
+}
 .summaryTopPlan {
-    background-color: rgb(247, 249, 253);
+    background-color: transparent;
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,4 +73,7 @@
     color: rgb(11, 70, 149);
     font-weight: bold;
     font-size: 18px;
+}
+.summaryTotalNombre.dark {
+    color: rgb(70, 150, 255);
 }

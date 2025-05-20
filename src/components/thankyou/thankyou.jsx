@@ -1,9 +1,9 @@
 import "./thankyou.css"
 import thanksLogo from "../../../public/img/thankyou.svg"
 
-export default function Thankyou(){
+export default function Thankyou({dark}){
     return(
-        <div className="thankyou">
+        <div className={`thankyou ${dark ? "dark" : ""}`}>
             <img className="thanksLogo" src={thanksLogo} alt="" />
             <h1>Thank you!</h1>
             <p>Thanks for confirming your subscription! We hope you have

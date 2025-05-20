@@ -10,6 +10,9 @@
     gap: 30px;
     padding-top: 50px;
 }
+.sidebar.dark {
+    filter: hue-rotate(330deg);
+}
 .opt {
     display: flex;
     align-items: center;

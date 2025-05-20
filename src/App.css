@@ -31,3 +31,13 @@
 .Light {
     fill: white;
 }
+@media (max-width:910px) {
+    .App {
+        flex-direction: column;
+        width: 80%;
+        padding: 0px;
+    }
+    .AppDroite {
+        width: 100%;
+    }
+}

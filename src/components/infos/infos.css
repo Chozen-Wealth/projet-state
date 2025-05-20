@@ -84,3 +84,9 @@
     background-color: hsla(0, 0%, 0%, 0.479);
     color: rgb(117, 117, 117);
 }
+@media (max-width:910px) {
+    .infos {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

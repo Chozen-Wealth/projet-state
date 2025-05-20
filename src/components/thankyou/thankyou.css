@@ -1,0 +1,19 @@
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+.thankyou p {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.5);
+}
+.thankyou h1 {
+    color: rgb(7, 48, 101);
+}

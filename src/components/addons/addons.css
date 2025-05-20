@@ -1,0 +1,68 @@
+.addons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.divAddons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.cardAddons {
+    width: 100%;
+    border: 2px solid rgba(150, 153, 171, 0.4);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cardAddons:hover {
+    border-color: rgb(111, 53, 190);
+}
+.cardAddons.active {
+    border-color: rgb(111, 53, 190);
+    background-color: rgba(211, 211, 211, 0.5);
+}
+.CheckAddons {
+    border: 2px solid rgba(150, 153, 171, 0.4);
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.CheckAddons svg {
+    fill: white;
+}
+.CheckAddons.active {
+    background-color: rgb(111, 53, 190);
+}
+.divTextAddons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20px;
+}
+.divTextAddons > span:first-of-type {
+    font-weight: bolder;
+    color: hsl(213, 92%, 29%);
+    font-size: 18px;
+}
+.divTextAddons > span:last-of-type {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+    font-size: 16px;
+}
+.addonsPricing {
+    color: rgb(111, 53, 190);
+    font-weight: 500;
+}

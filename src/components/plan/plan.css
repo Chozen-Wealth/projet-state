@@ -31,8 +31,13 @@
     padding: 20px;
     cursor: pointer;
 }
+.cardPlan.active {
+    border: 2px solid rgb(182, 104, 185);
+    background-color: rgba(211, 211, 211, 0.5);
+}
 .cardPlan:hover {
     border: 2px solid rgb(182, 104, 185);
+    background-color: rgba(211, 211, 211, 0.5);
 }
 .cardImg {
     width: 40px;

@@ -30,6 +30,7 @@
     justify-content: space-between;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .cardPlan.active {
     border: 2px solid rgb(182, 104, 185);

@@ -4,6 +4,25 @@ export default function Summary({step, setStep, addons, plan, yearly, online, st
 
     let totalTout = 0
     
+    if (plan === "arcade") {
+        totalTout += yearly ? 90 : 9
+    } 
+    if (plan === "advanced") {
+        totalTout += yearly ? 120 : 12
+    }
+    if (plan === "pro") {
+        totalTout += yearly ? 150 : 15
+    }
+
+    if (online) {
+        totalTout += yearly ? 10 : 1
+    }
+    if (storage) {
+        totalTout += yearly ? 20 : 2
+    }
+    if (custom) {
+        totalTout += yearly ? 20 : 2
+    }
 
     return(
         <div className="summary">
@@ -20,6 +39,7 @@ export default function Summary({step, setStep, addons, plan, yearly, online, st
                     {yearly === true ? (<span className="summaryPrixPlan">{plan === "arcade" ? "$90/yr" : plan === "advanced" ? "$120/yr" : plan === "pro" ? "$150/yr" : ""}</span>)
                     : (<span className="summaryPrixPlan">{plan === "arcade" ? "$9/mo" : plan === "advanced" ? "$12/mo" : plan === "pro" ? "$15/mo" : ""}</span>)}
                     </div>
+                {online || storage || custom ? (
                 <div className="divSummaryAddons">
                     {online ? (<div className="addon">
                         <span>Larger Storage</span>
@@ -39,6 +59,7 @@ export default function Summary({step, setStep, addons, plan, yearly, online, st
                     </div>)
                     : ""}
                 </div>
+                ): "" }
             </div>
             <div className="summaryBot">
                 <div className="divSummaryTotal">

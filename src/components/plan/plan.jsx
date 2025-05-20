@@ -52,7 +52,7 @@ export default function Plan({yearly, setYearly, step, setStep, plan, setPlan}){
                 <div onClick={()=> {setYearly(!yearly)}} className="switch"><div className={`ball ${yearly === true ? "on" : ""}`}></div></div>
                 <span className={`${yearly === true ? "planChosen" : ""}`}>Yearly</span>
             </div>
-            <button onClick={()=> next()} className="btnNext">Next Step</button>
+            <button onClick={()=> next()} className={`btnNext ${!plan ? "disabled" : ""}`}>Next Step</button>
             <span onClick={()=> setStep("infos")} className="btnGoBack">Go Back</span>
         </div>
     )

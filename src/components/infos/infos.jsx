@@ -23,7 +23,7 @@ export default function Infos({step, setStep, valueNom, setValueNom, valueMail, 
             <input onChange={(e)=> setValueMail(e.target.value)} value={valueMail} className="inputInfos" type="text" placeholder="vingt_six@email.com" />
             <label className="labelInfos" htmlFor="">Your phone number is : {valueTel}</label>
             <input onChange={(e)=> setValueTel(e.target.value)} value={valueTel} className="inputInfos" type="text" placeholder="e.g.+1 234 567 890" />
-            <button onClick={()=> next()} className="btnNext">Next Step</button>
+            <button onClick={()=> next()} className={`btnNext ${!valueNom || !valueMail || !valueTel ? "disabled" : ""}`}>Next Step</button>
         </div>
     )
 }

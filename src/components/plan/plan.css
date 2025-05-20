@@ -1,0 +1,17 @@
+.plan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.btnGoBack {
+    position: absolute;
+    left: 80px;
+    bottom: 30px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}

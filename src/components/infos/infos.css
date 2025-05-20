@@ -1,0 +1,55 @@
+.infos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.divTitre {
+    height: 100px;
+}
+.divTitre h1 {
+    color: hsl(213, 96%, 18%);
+}
+.divTitre p {
+    color: hsl(231, 11%, 63%);
+    font-size: 14px;
+}
+.labelInfos {
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.inputInfos {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: 2px solid rgba(150, 153, 171, 0.5);
+    border: none;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.inputInfos:focus {
+    outline: 4px solid rgb(172, 142, 173);
+}
+.inputInfos::placeholder {
+    color: rgba(150, 153, 171, 0.75);
+}
+.btnNext {
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+    padding: 15px 25px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btnNext:hover {
+    background-color: hsl(213, 100%, 27%);
+}

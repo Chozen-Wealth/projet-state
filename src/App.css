@@ -6,4 +6,8 @@
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    display: flex;
+}
+.AppDroite {
+    width: calc(900px - 270px);
 }

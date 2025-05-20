@@ -8,12 +8,17 @@ import Summary from './components/summary/summary'
 import Thankyou from './components/thankyou/thankyou'
 
 function App() {
+
+  const [step, setStep] = useState("infos")
+  const [yearly, setYearly] = useState(false)
+
   return (
     <div className='App'>
-      <Sidebar/>
+      <Sidebar step={step} setStep={setStep} />
       <div className="AppDroite">
-      <Infos/>
-      <Plan/>
+      {step === "infos" ? (<Infos step={step} setStep={setStep} />)
+      : step === "plan" ? (<Plan yearly={yearly} setYearly={setYearly} />)
+      : "" }
       <Addons/>
       <Summary/>
       <Thankyou/>

@@ -23,6 +23,7 @@
     justify-content: space-between;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .cardAddons:hover {
     border-color: rgb(111, 53, 190);

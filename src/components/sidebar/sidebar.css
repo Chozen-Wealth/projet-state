@@ -1,0 +1,50 @@
+.sidebar {
+    background-image: url(../../../public/img/sidebar.svg);
+    width: 270px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+}
+.opt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-left: 15%;
+    cursor: default;
+}
+.optText {
+    display: flex;
+    flex-direction: column;
+}
+.optSteps {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+}
+.optTitle {
+    color: white;
+    font-weight: bold;
+}
+.optBubble {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.optBubble.active {
+    background-color: white;
+    color: rgb(72, 62, 255);
+    border-color: rgb(72, 62, 255);
+
+}

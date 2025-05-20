@@ -15,3 +15,80 @@
     color: hsl(213, 96%, 18%);
     font-weight: 500;
 }
+.divPlans {
+    display: flex;
+    justify-content: space-between;
+}
+.cardPlan {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    border: 2px solid rgba(150, 153, 171, 0.4);
+    border-radius: 20px;
+    width: 32%;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+.cardPlan:hover {
+    border: 2px solid rgb(182, 104, 185);
+}
+.cardImg {
+    width: 40px;
+    height: 40px;
+}
+.cardPricing {
+    display: flex;
+    flex-direction: column;
+}
+.cardPricing span:first-of-type {
+    color: hsl(213, 92%, 29%);
+    font-weight: bolder;
+    font-size: 18px;
+}
+.cardPricing span:last-of-type {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+}
+.divSwitchPlan {
+    background-color: rgb(238, 244, 254);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.divSwitchPlan span {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.divSwitchPlan span.planChosen {
+    color: hsl(213, 96%, 18%);
+}
+.switch {
+    background-color: hsl(213, 96%, 18%);
+    height: 25px;
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.ball.on {
+    position: absolute;
+    left: calc(47px - 20px);
+}
+.ball {
+    position: absolute;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}

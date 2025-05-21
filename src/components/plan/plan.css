@@ -130,3 +130,13 @@
         left: 20px;
     }
 }
+@media (max-width:490px) {
+    .cardPlan {
+        padding: 10px;
+    }
+}
+@media (max-width:450px) {
+    .cardPlan {
+        padding: 10px;
+    }
+}

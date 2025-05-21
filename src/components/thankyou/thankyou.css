@@ -47,3 +47,23 @@
         transform: translateY(0px);
     }
 }
+@media (max-width:910px) {
+    .thankyou {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width:590px) {
+    .thankyou p br {
+        display: none;
+    }
+}
+@media (max-width:450px) {
+    .thankyou {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .thankyou p br {
+        display: none;
+    }
+}

@@ -129,6 +129,9 @@
     .btnGoBack {
         left: 20px;
     }
+    .divSwitchPlan {
+        border-radius: 20px;
+    }
 }
 @media (max-width:490px) {
     .cardPlan {

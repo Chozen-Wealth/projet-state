@@ -65,7 +65,7 @@
         padding-left: 20px;
         padding-right: 20px;
         border-radius: 10px 10px 0px 0px;
-        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75)) ,url(../../../public/img/sidebar.svg);
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)) ,url(../../../public/img/sidebar.svg);
     }
     .opt {
         margin-left: 0;
@@ -87,6 +87,7 @@
 }
 @media (max-width:450px) {
     .sidebar {
-        border-radius: 0px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
 }
